@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pickup date:</strong>
+  <%= @package.pickup_date %>
+</p>
+
+<p>
+  <strong>Delivery date:</strong>
+  <%= @package.delivery_date %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @package.status %>
+</p>
+
+<p>
+  <strong>Receiver street:</strong>
+  <%= @package.receiver_street %>
+</p>
+
+<p>
+  <strong>Receiver city:</strong>
+  <%= @package.receiver_city %>
+</p>
+
+<%= link_to 'Edit', edit_package_path(@package) %> |
+<%= link_to 'Back', packages_path %>
